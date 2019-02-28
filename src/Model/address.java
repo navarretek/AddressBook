@@ -16,7 +16,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="address")
-public class Address {
+public class address {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -47,7 +47,7 @@ public class Address {
 	 * @param country
 	 * @param city
 	 */
-	public Address(String street, int houseNumber, String country, String city) {
+	public address(String street, int houseNumber, String country, String city) {
 		super();
 		this.street = street;
 		this.houseNumber = houseNumber;
@@ -61,7 +61,7 @@ public class Address {
 	 * @param country
 	 * @param city
 	 */
-	public Address(int id, String street, int houseNumber, String country, String city) {
+	public address(int id, String street, int houseNumber, String country, String city) {
 		super();
 		this.id = id;
 		this.street = street;
@@ -72,7 +72,7 @@ public class Address {
 	/**
 	 * 
 	 */
-	public Address() {
+	public address() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
